@@ -14,8 +14,10 @@ synclient TapButton1=1
 synclient TapButton2=3
 synclient TapButton3=2
 synclient PalmDetect=1
-synclient FingerLow=20
-synclient FingerHigh=25
+#synclient FingerLow=20
+#synclient FingerHigh=25
+synclient FingerHigh=55
+synclient FingerLow=50
 synclient TapAndDragGesture=1
 # Right button click on lower-right corner of touchpad
 synclient RightButtonAreaLeft=50
