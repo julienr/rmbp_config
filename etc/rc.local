@@ -1,1 +1,33 @@
-/etc/rc.local
+#!/bin/sh -e
+#
+# rc.local
+#
+# This script is executed at the end of each multiuser runlevel.
+# Make sure that the script will "exit 0" on success or any other
+# value on error.
+#
+# In order to enable or disable this script just change the execution
+# bits.
+#
+# By default this script does nothing.
+
+# fix flaky wireless when running on battery
+iwconfig eth0 power off
+
+# speakers
+hda-verb /dev/snd/hwC1D0 0x1 set_gpio_data 1
+
+# fn key by default
+echo 2 > /sys/module/hid_apple/parameters/fnmode
+
+# disable keyboard backlight
+echo 0 > /sys/class/leds/smc::kbd_backlight/brightness
+
+# Disallow wakeups events from the touchpad. This avoids spurious wakeups
+# https://www.kernel.org/doc/Documentation/power/devices.txt
+# Note : to list usb devices wakeup flags, use
+# $ cat /sys/bus/usb/devices/*/power/wakeup
+# Then, use 'lsusb -t' to determine which device is what
+echo disabled > /sys/bus/usb/devices/1-5/power/wakeup
+
+exit 0
