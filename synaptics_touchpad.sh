@@ -10,6 +10,7 @@
 # [    13.864] (--) synaptics: bcm5974: pressure range 0 - 256
 # [    13.864] (--) synaptics: bcm5974: finger width range 0 - 16
 synclient VertTwoFingerScroll=1
+synclient VertScrollDelta=100
 synclient TapButton1=1
 synclient TapButton2=3
 synclient TapButton3=2
