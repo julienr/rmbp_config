@@ -23,6 +23,13 @@ synclient TapAndDragGesture=1
 # Right button click on lower-right corner of touchpad
 synclient RightButtonAreaLeft=50
 synclient RightButtonAreaTop=5000
+
+# Enable bottom-right corner button
+synclient RBCornerButton=3
+# Disable other corner buttons, otherwise, this will cause sudden jumps
+synclient RTCornerButton=0
+synclient LTCornerButton=0
+synclient LBCornerButton=0
 # Disable touch in in bottom area (where my thumb always lies).
 # Requires a patched xserver-xorg-input-synaptics, see :
 # https://bugs.launchpad.net/ubuntu/+source/xserver-xorg-input-synaptics/+bug/1026046
