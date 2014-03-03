@@ -17,11 +17,11 @@ synclient TapButton3=2
 synclient PalmDetect=1
 #synclient FingerLow=20
 #synclient FingerHigh=25
-synclient FingerHigh=55
-synclient FingerLow=50
+synclient FingerHigh=75
+synclient FingerLow=70
 synclient TapAndDragGesture=1
 # Right button click on lower-right corner of touchpad
-synclient RightButtonAreaLeft=50
+synclient RightButtonAreaLeft=-500
 synclient RightButtonAreaTop=5000
 
 # Enable bottom-right corner button
@@ -34,4 +34,8 @@ synclient LBCornerButton=0
 # Requires a patched xserver-xorg-input-synaptics, see :
 # https://bugs.launchpad.net/ubuntu/+source/xserver-xorg-input-synaptics/+bug/1026046
 # https://bugs.freedesktop.org/show_bug.cgi?id=66532#c5
-synclient AreaBottomEdge=5000
+synclient AreaBottomEdge=4500
+
+# TapAndDrag doesn't seem to work well with the clickpad mode. This causes
+# random jumps when the thumb is clicking and another finger moving
+synclient TapAndDragGesture=0
