@@ -36,6 +36,4 @@ synclient LBCornerButton=0
 # https://bugs.freedesktop.org/show_bug.cgi?id=66532#c5
 synclient AreaBottomEdge=4500
 
-# TapAndDrag doesn't seem to work well with the clickpad mode. This causes
-# random jumps when the thumb is clicking and another finger moving
-synclient TapAndDragGesture=0
+synclient TapAndDragGesture=1
