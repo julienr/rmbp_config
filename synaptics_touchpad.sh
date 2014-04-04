@@ -11,9 +11,15 @@
 # [    13.864] (--) synaptics: bcm5974: finger width range 0 - 16
 synclient VertTwoFingerScroll=1
 synclient VertScrollDelta=100
-synclient TapButton1=1
-synclient TapButton2=3
+# When enabling tapbutton and two finger scrolling, a tap will often be
+# registered just at the end of scrolling. That's annoying
+#synclient TapButton1=1
+#synclient TapButton2=3
+#synclient TapButton3=2
+synclient TapButton1=0
+synclient TapButton2=0
 synclient TapButton3=2
+
 synclient PalmDetect=1
 #synclient FingerLow=20
 #synclient FingerHigh=25
@@ -21,7 +27,7 @@ synclient FingerHigh=75
 synclient FingerLow=70
 synclient TapAndDragGesture=1
 # Right button click on lower-right corner of touchpad
-synclient RightButtonAreaLeft=-500
+synclient RightButtonAreaLeft=100
 synclient RightButtonAreaTop=5000
 
 # Enable bottom-right corner button
@@ -37,3 +43,6 @@ synclient LBCornerButton=0
 synclient AreaBottomEdge=4500
 
 synclient TapAndDragGesture=1
+
+synclient HorizHysteresis=50
+synclient VertHysteresis=50
