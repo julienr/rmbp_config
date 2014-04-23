@@ -20,15 +20,19 @@ synclient TapButton1=0
 synclient TapButton2=0
 synclient TapButton3=2
 
+synclient ClickPad=1
+synclient ClickFinger1=0
+synclient ClickFinger2=0
+synclient ClickFinger3=0
+
 synclient PalmDetect=1
 #synclient FingerLow=20
 #synclient FingerHigh=25
 synclient FingerHigh=75
 synclient FingerLow=70
-synclient TapAndDragGesture=1
 # Right button click on lower-right corner of touchpad
-synclient RightButtonAreaLeft=100
-synclient RightButtonAreaTop=5000
+synclient RightButtonAreaLeft=-50
+#synclient RightButtonAreaTop=5000
 
 # Enable bottom-right corner button
 synclient RBCornerButton=3
@@ -40,7 +44,7 @@ synclient LBCornerButton=0
 # Requires a patched xserver-xorg-input-synaptics, see :
 # https://bugs.launchpad.net/ubuntu/+source/xserver-xorg-input-synaptics/+bug/1026046
 # https://bugs.freedesktop.org/show_bug.cgi?id=66532#c5
-synclient AreaBottomEdge=4500
+synclient AreaBottomEdge=3800
 
 synclient TapAndDragGesture=1
 
