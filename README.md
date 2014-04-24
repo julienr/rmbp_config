@@ -22,8 +22,10 @@ Possible solution
 https://zoni.nl/posts/2013/11/09/fixing-the-broadcom-bcm4331-wireless-drivers-on-ubuntu-1310/
 
 
-Solution for problem connecting to WPA2 secured networks:
-.........................................................
+### WPA2 secured networks
+
+If you have trouble connecting to WPA2 networks, the following might help :
+
 This bug report is interesting
 https://bugs.launchpad.net/ubuntu/+source/network-manager/+bug/1173152
 
