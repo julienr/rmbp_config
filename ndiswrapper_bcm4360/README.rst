@@ -1,8 +1,16 @@
 Since the official wl drivers don't work that well for 5GHz networks, we can
 use ndiswrapper. Unfortunately, this is not better (cannot scan)
 
-Download XP drivers from asus (PCE-AC66 uses bcm4360 chipset) :
-http://dlcdnet.asus.com/pub/ASUS/wireless/PCE-AC66/DR_PCE_AC66_630770_WinXP.zip
+Download XP drivers from asus (PCE-AC68 uses bcm4360 chipset) :
+http://dlcdnet.asus.com/pub/ASUS/wireless/PCE-AC68/UT_PCE_AC68_2084.zip
+
+Unzip and extract drivers from .cab with unshield
+
+  mkdir cab_content
+  cd cab_content
+  unshield x ../data1.hdr
+
+Now, use ndisgtk to load the driver in "cab_content/PCE-AC68_-_Driver_-_WinXP/Driver/PCE-AC68/"
 
 This is the pci device id :
 03:00.0 0280: 14e4:43a0 (rev 03)
