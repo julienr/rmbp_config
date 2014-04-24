@@ -29,7 +29,7 @@ If you have trouble connecting to WPA2 networks, the following might help :
 This bug report is interesting
 https://bugs.launchpad.net/ubuntu/+source/network-manager/+bug/1173152
 
-Basically, edit /etc/NetworkManager/system-connections/<Network> and remove
+Basically, edit /etc/NetworkManager/system-connections/&lt;Network&gt; and remove
 the line "system-ca-certs=true". Then, restart network-manager with
 
 sudo network-manager restart
